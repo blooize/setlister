@@ -1,0 +1,23 @@
+{
+  "name": "setlister",
+  "version": "0.0.0",
+  "description": "Estimates the Length of a Setlist",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/blooize/setlister.git"
+  },
+  "author": "@bloo.antifa.associates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blooize/setlister/issues"
+  },
+  "homepage": "https://github.com/blooize/setlister#readme",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
