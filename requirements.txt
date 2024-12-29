@@ -1,0 +1,11 @@
+asttokens==3.0.0
+colorama==0.4.6
+coverage==5.5
+deprecation==2.1.0
+executing==2.1.0
+filetype==1.2.0
+icecream==2.1.3
+mutagen==1.47.0
+packaging==24.2
+Pygments==2.18.0
+toml==0.10.2
