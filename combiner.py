@@ -4,6 +4,8 @@ import mutagen
 import serato_markers2 as sm2
 import base64
 import parse_crate as pc
+import argparse
+import json
 
 def readMp3Data(path):
     name = path.split('/')[-1]
@@ -75,8 +77,8 @@ def calcSetLength(cues):
     
     return length
 
-def getSetlist():
-    list = pc.loadcrate('/Users/simon/Music/_Serato_/Subcrates/15th .crate')
+def getSetlist(file):
+    list = pc.loadcrate(file)
     trunked = list[9:]
     titles = []
     for t in trunked:
@@ -90,10 +92,14 @@ def getSetlist():
 
     return fixed
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('crate', metavar='CRATE')
+
+    args = parser.parse_args(argv)
     cues = list()
 
-    for file in getSetlist():
+    for file in getSetlist(args.crate):
         if file['type'] == 'mp3':
             cues.append(readMp3Data("/" + file['name']))
         elif file['type'] == 'flac':
@@ -102,6 +108,9 @@ def main():
             print(file["name"] + " is currently incompatible, or not a music file")
     length = round(calcSetLength(cues)/1000/60, 2)
     data = {"length": str(length) + " minutes", "setlist": cues}
-    return data
+    dump = json.dumps(data)
+
+    return dump
+
 if __name__ == '__main__':
     sys.exit(main())
