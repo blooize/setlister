@@ -65,3 +65,10 @@ The length of a Song is calculated by the following "formula":
 This is repeated for every song in the Tracklist and should be sorted by index the same way it is within Serato. 
 
 All the deltas are summed up and more or less we have the length of the set. This of cause will be inaccurate, this will ignore the beginning and end of the first/last song. (might be adressed in the future, or already is and i forgot to update the readme >.<)
+
+## Credits
+https://github.com/Holzhaus/serato-tags/blob/main/scripts/serato_markers2.py
+
+https://gist.githubusercontent.com/kerrickstaley/8eb04988c02fa7c62e75c4c34c04cf02/raw/b7b37bed5df89f736d9bc3c865ea38e05d532668/parse_serato_crates.py
+
+Without these 2 scripts this project would have been a major headache to realize within the 38C3, giant thanks.
