@@ -1,6 +1,6 @@
 # Serato Setlist Length Calculator
 
-A Python script based on the Open-source work of the [Mixxx Contributers](https://github.com/mixxxdj/mixxx) for extracting Serato Metadata inside MP3s and FLAC files.
+A Python script based on the Open-source work of the [Mixxx Contributers](https://github.com/mixxxdj/mixxx) for calculating the approximate Set length via Serato Metadata inside MP3s and FLAC files. (hopefully soon ogg)
 
 ## Usage
 ``` shell
