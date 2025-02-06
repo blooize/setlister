@@ -5,7 +5,7 @@ A Python script based on the Open-source work of the [Mixxx Contributers](https:
 ## Usage
 ``` shell
 $ pip install -r requirements.txt
-$ python3 combiner /path/to/_Serato_/Subcrates/your.crate
+$ python3 combiner.py /path/to/_Serato_/Subcrates/your.crate
 ```
 IMPORTANT: a specific pattern of cue points must be used within the Songs/Crate, without this the Script **WILL** result errors, or wrong values. This is defined lower within the README.
 
